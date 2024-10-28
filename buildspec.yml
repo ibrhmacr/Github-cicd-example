@@ -1,0 +1,22 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo "Install Phase - Nothing to do"
+  pre_build:
+      commands:
+        # Pre-build Phase
+        - echo "Pre-build commands applying.."
+  build:
+    commands:
+      # Build Phase
+      - echo "Build started on `date`"
+      - echo "Build commands applying"
+  post_build:
+    commands:
+      # Post-build Phase
+      - echo "Build completed on `date`"
+      - echo "Post-build commands applying.."             
+artifacts:
+  files: 
+    - build.json 
